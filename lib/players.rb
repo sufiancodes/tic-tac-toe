@@ -1,5 +1,6 @@
 class Player
   def welcome
+    # To welcome player and keep track of their names
     puts "let the game begin who's 1st player"
     @player_one = gets.chomp
     puts "Now who's 2nd player"
