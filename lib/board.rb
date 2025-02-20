@@ -1,9 +1,5 @@
 class Board
   @@array = [ 1 , 2, 3, 4, 5, 6, 7, 8, 9]
-  def initialize(player1_input, player2_input)
-    @player1 = player1_input
-    @player2 = player2_input
-  end
   def check_diagonal
     if @@array[0] == @@array[4] && @@array[4] == @@array[8] && @@array[8] == @@array[0]
       "We have winner"
