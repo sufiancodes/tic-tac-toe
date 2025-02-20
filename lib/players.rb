@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Player
   def welcome
     # To welcome player and keep track of their names
