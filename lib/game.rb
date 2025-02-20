@@ -38,7 +38,3 @@ class Game < Board
     puts "Its a tie" if moves == 9
   end
 end
-
-game = Game.new
-game.start
-game.play_game

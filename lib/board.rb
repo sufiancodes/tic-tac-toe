@@ -24,4 +24,3 @@ class Board < Player
     puts "#{@@array[6]} #{@@array[7]} #{@@array[8]}"
   end
 end
-# if in 9 moves we don't have winner we have draw
