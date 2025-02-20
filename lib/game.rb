@@ -26,12 +26,16 @@ class Game < Board
     end
   end
   def play_game
-    loop  do
-      player_one_turn
-      break if check_wining_conditions == true
-      player_two_turn
-      break if check_wining_conditions == true
+    moves = 0
+    while moves < 9 && !check_wining_conditions
+    player_one_turn
+    moves += 1
+    break if check_wining_conditions || moves == 9
+    player_two_turn
+    moves += 1
+    break if check_wining_conditions || moves == 9
     end
+    puts "Its a tie" if moves == 9
   end
 end
 
