@@ -7,7 +7,7 @@ Command line based implementation of the ruby tic tac toe game build with ruby
 - Clone the Repository
 ```
 git clone git@github.com:sufiancodes/tic-tac-toe.git
-
+```
 - cd tic-tac-toe
 
 - `bundle install`
