@@ -12,8 +12,8 @@ class Game < Board
     # To let player modify and rendered view
     puts "#{@player_one} turn"
     player_one_input = gets.chomp.to_i
-    index = @@array.find_index(player_one_input)
-    @@array[index] = "X"
+    index = @array.find_index(player_one_input)
+    @array[index] = "X"
     render_view
   end
 
@@ -21,8 +21,8 @@ class Game < Board
     # To let player modify and rendered view
     puts "#{@player_two} turn"
     player_two_input = gets.chomp.to_i
-    index = @@array.find_index(player_two_input)
-    @@array[index] = "O"
+    index = @array.find_index(player_two_input)
+    @array[index] = "O"
     render_view
   end
 
