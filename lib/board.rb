@@ -3,7 +3,7 @@
 require_relative "players"
 class Board < Player
   # array for displaying and updating result
-  def initialize
+  def initialize # rubocop:disable Lint/MissingSuper
     @array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   end
 
@@ -42,6 +42,3 @@ class Board < Player
     puts "#{@array[6]} | #{@array[7]} | #{@array[8]}"
   end
 end
-result = Board.new
-view = result.render_view
-puts view
