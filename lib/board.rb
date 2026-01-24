@@ -2,6 +2,8 @@
 
 require_relative "players"
 class Board < Player
+  attr_accessor :array
+
   # array for displaying and updating result
   def initialize # rubocop:disable Lint/MissingSuper
     @array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
