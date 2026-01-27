@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Player
+  attr_accessor :player_one, :player_two
+
   def welcome
     # To welcome player and keep track of their names
     puts "let the game begin who's 1st player"
