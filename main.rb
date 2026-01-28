@@ -7,6 +7,4 @@ require_relative "lib/players"
 game = Game.new
 game.start
 game.play_game
-if game.check_wining_conditions == true
-  puts " Win"
-end
+puts "You are Win" if game.check_wining_conditions == true
