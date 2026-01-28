@@ -30,7 +30,6 @@ class Game < Board
     # For announcing winner
     return unless check_columns || check_diagonal || check_rows
 
-    puts "You Win"
     true
   end
 
